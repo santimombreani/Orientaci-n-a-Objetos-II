@@ -1,4 +1,4 @@
-package TP1;
+package TP1PUNTO2;
 
 public class Factura {
     private Pedido pedido;

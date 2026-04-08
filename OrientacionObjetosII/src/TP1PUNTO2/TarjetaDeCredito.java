@@ -1,16 +1,16 @@
-package TP1;
+package TP1PUNTO2;
 
 public abstract class TarjetaDeCredito {
     public abstract  double calcularDescuento(Pedido pedido);
 
-    public class Visa extends TarjetaDeCredito{
+    public static class Visa extends TarjetaDeCredito{
         @Override
         public double calcularDescuento(Pedido pedido){
             return pedido.calcularBebidas() * 0.03;
         }
     }
 
-    public class Mastercard extends TarjetaDeCredito{
+    public static class Mastercard extends TarjetaDeCredito{
         @Override
         public double calcularDescuento(Pedido pedido){
             return pedido.calcularPlatos() * 0.02;
@@ -18,14 +18,14 @@ public abstract class TarjetaDeCredito {
         }
     }
 
-    public class ComarcaPlus extends TarjetaDeCredito{
+    public static class ComarcaPlus extends TarjetaDeCredito{
         @Override
         public double calcularDescuento(Pedido pedido){
             return pedido.calcularTotal() * 0.02;
         }
     }
 
-    public class Viedma extends TarjetaDeCredito{
+    public static class Viedma extends TarjetaDeCredito{
         @Override
         public double calcularDescuento(Pedido pedido){
             return 0;

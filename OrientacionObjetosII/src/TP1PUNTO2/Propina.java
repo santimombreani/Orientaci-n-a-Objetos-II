@@ -1,4 +1,4 @@
-package TP1;
+package TP1PUNTO2;
 
 public class Propina {
     public static double calcular(Pedido pedido, double porcentaje){
