@@ -11,11 +11,12 @@ public class Main {
     }
 
     private static List<Evento> cargarEventos() {
-        return List.of(new Evento("Escuela de Rock", "Comedia"),
-                new Evento("Hamlet", "Drama"),
-                new Evento("El Avion", "Dram"),
-                new Evento("Cantando en la playa", "Comedia"),
-                new Evento("El Perfume", "Drama")
+        return List.of(
+                new Comedia("Escuela de Rock"),
+                new Drama("Hamlet"),
+                new Drama("El Avion"),
+                new Comedia("Cantando en la playa"),
+                new Drama("El Perfume")
         );
     }
 
